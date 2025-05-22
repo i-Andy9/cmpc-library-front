@@ -31,7 +31,7 @@ export const BooksPage: React.FC = () => {
     if (filters.genre) params.genre = filters.genre;
     if (filters.publisher) params.publisher = filters.publisher;
     if (filters.author) params.author = filters.author;
-    if (filters.title) params.title = filters.title;
+    if (filters.title) params.title = debouncedSearch;
     if (filters.available) params.available = availableValue;
     // Paginación opcional
     params.limit = 10;
